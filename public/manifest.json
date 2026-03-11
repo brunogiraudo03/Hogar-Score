@@ -1,0 +1,16 @@
+{
+  "name": "Hogar Score",
+  "short_name": "Hogar Score",
+  "description": "Competencia de tareas del hogar entre Bruno y Lucila",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#06030f",
+  "theme_color": "#06030f",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "categories": ["productivity", "lifestyle"],
+  "lang": "es"
+}

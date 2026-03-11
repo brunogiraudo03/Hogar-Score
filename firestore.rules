@@ -1,0 +1,24 @@
+// firestore.rules
+// Subilo en Firebase Console → Firestore → Rules
+// (o con: firebase deploy --only firestore:rules)
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Tareas — lectura/escritura libre (app privada entre Bruno y Lucila)
+    match /tasks/{taskId} {
+      allow read, write: if true;
+    }
+
+    // Log de actividades
+    match /log/{entryId} {
+      allow read, write: if true;
+    }
+
+    // Configuración compartida
+    match /config/{docId} {
+      allow read, write: if true;
+    }
+  }
+}
